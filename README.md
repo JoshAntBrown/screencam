@@ -1,3 +1,5 @@
+<img src="docs/images/icon.png" width="128" alt="ScreenCam icon">
+
 # ScreenCam
 
 A tiny macOS menu bar app for quick screen recordings with a floating webcam bubble.
@@ -37,4 +39,5 @@ The app icon is drawn in code by `icon/make_icon.swift`. To regenerate it:
 xcrun swiftc icon/make_icon.swift -o /tmp/make_icon
 /tmp/make_icon icon/AppIcon.iconset
 iconutil -c icns icon/AppIcon.iconset -o icon/AppIcon.icns
+cp icon/AppIcon.iconset/icon_256x256@2x.png docs/images/icon.png
 ```
